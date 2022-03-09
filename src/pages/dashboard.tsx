@@ -67,14 +67,14 @@ export default function Dashboard() {
         <title>Dashboard | dash.Go</title>
       </Head>
 
-      <Flex direction="column" height="100vh">
+      <Flex direction={'column'} height={'100vh'}>
         <Header />
 
         <Flex
-          width="100%"
+          width={'100%'}
           maxWidth={1480}
           marginY={6}
-          marginX="auto"
+          marginX={'auto'}
           paddingX={6}
         >
           <Sidebar />
@@ -82,38 +82,38 @@ export default function Dashboard() {
           <SimpleGrid
             flex={1}
             gap={4}
-            minChildWidth="320px"
-            alignItems="flex-start"
+            minChildWidth={'320px'}
+            alignItems={'flex-start'}
           >
             <Box
               padding={8}
-              background="gray.800"
+              background={'gray.800'}
               borderRadius={8}
               paddingBottom={4}
             >
-              <Text fontSize="lg" marginBottom={4}>
+              <Text fontSize={'lg'} marginBottom={4}>
                 Inscritos da semana
               </Text>
               <Chart
                 options={options}
                 series={series}
-                type="area"
+                type={'area'}
                 height={160}
               />
             </Box>
             <Box
               padding={8}
-              background="gray.800"
+              background={'gray.800'}
               borderRadius={8}
               paddingBottom={4}
             >
-              <Text fontSize="lg" marginBottom={4}>
+              <Text fontSize={'lg'} marginBottom={4}>
                 Taxa de abertura
               </Text>
               <Chart
                 options={options}
                 series={series}
-                type="area"
+                type={'area'}
                 height={160}
               />
             </Box>
