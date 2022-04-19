@@ -7,7 +7,7 @@ const Chart = dynamic(() => import('react-apexcharts'), {
   ssr: false,
 });
 
-import { Sidebar } from '../components/Form/Sidebar';
+import { Sidebar } from '../components/Sidebar';
 import { Header } from '../components/Header';
 
 const options: ApexOptions = {
@@ -86,7 +86,7 @@ export default function Dashboard() {
             alignItems={'flex-start'}
           >
             <Box
-              padding={8}
+              padding={[6, 8]}
               background={'gray.800'}
               borderRadius={8}
               paddingBottom={4}
@@ -102,7 +102,7 @@ export default function Dashboard() {
               />
             </Box>
             <Box
-              padding={8}
+              padding={[6, 8]}
               background={'gray.800'}
               borderRadius={8}
               paddingBottom={4}
